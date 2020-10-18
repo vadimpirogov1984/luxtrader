@@ -1,0 +1,851 @@
+@font-face 
+   font-family: 'PF Din Text Cond Pro'
+   src: url('../fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.eot')
+   src: url('../fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.eot?#iefix') format('embedded-opentype')
+   src: url('../fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.woff2') format('woff2')
+   src: url('../fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.woff') format('woff')
+   src: url('../fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.ttf') format('truetype')
+   font-weight: normal
+   font-style: normal
+   font-display: swap
+
+@font-face 
+   font-family: 'PF Din Text Cond Pro'
+   src: url('../fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.eot')
+   src: url('../fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.eot?#iefix') format('embedded-opentype')
+   src: url('../fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.woff2') format('woff2')
+   src: url('../fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.woff') format('woff')
+   src: url('../fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.ttf') format('truetype')
+   font-weight: 500
+   font-style: normal
+   font-display: swap
+
+
+@font-face 
+	font-family: 'Ceremonious One'
+	src: url('../fonts/CeremoniousOne/CeremoniousOne.eot')
+	src: url('../fonts/CeremoniousOne/CeremoniousOne.eot?#iefix') format('embedded-opentype')
+	src: url('../fonts/CeremoniousOne/CeremoniousOne.woff2') format('woff2')
+	src: url('../fonts/CeremoniousOne/CeremoniousOne.woff') format('woff')
+	src: url('../fonts/CeremoniousOne/CeremoniousOne.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+	font-display: swap
+
+
+@font-face 
+   font-family: 'BravoRG'
+   src: url('../fonts/BravoRG/BravoRG.eot')
+   src: url('../fonts/BravoRG/BravoRG.eot?#iefix') format('embedded-opentype')
+   src: url('../fonts/BravoRG/BravoRG.woff2') format('woff2')
+   src: url('../fonts/BravoRG/BravoRG.woff') format('woff')
+   src: url('../fonts/BravoRG/BravoRG.ttf') format('truetype')
+   font-weight: normal
+   font-style: normal
+   font-display: swap
+
+
+
+
+
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+html
+	height: 100%
+
+body 
+	height: 100%
+	font-family: 'PF Din Text Cond Pro', sans-serif
+	font-size: 14px
+	font-weight: normal
+	color: rgb(70, 70, 70)
+
+
+ul 
+	padding: 0
+li 
+	list-style: none
+a 
+	text-decoration: none
+	color: #ffffff
+
+
+h2 
+	font-family: "GilroyBold", sans-serif
+	font-size: 47px
+	line-height: 48px
+	color: rgb(0, 0, 0)
+	font-weight: bold
+
+h3 
+	font-family: "GilroyBold", sans-serif
+	font-size: 18px
+	line-height: 24px
+	color: rgb(0, 0, 0)
+	font-weight: bold
+// .ibg 
+// 	background-repeat: no-repeat
+// 	background-size: cover
+// 	background-position: center
+// 	img 
+// 		display: none
+
+._container
+	max-width: 950px
+	margin: 0 auto
+	@media screen and (max-width: $md2)
+		padding: 0 10px
+		max-width: 970px
+
+//==========================================================================
+
+.slider
+	&__lots
+		display: flex
+		justify-content: space-between
+		flex-direction: column 
+		align-items: center
+		text-align: center
+		width: 100%
+		margin-bottom: 60px
+	&__lots-body
+		margin-bottom: 50px
+		height: 100%
+		width: 100%
+		display: flex
+		justify-content: space-between
+		.slick-arrow
+			position: absolute
+			top: 433px
+			left: calc(50% + 50px)
+			z-index: 100
+			cursor: pointer
+	&__lots-item
+		display: flex
+		flex-direction: column
+		&.slick-slide
+			width: 250px
+			margin: 0 auto
+	&__lots-control
+		width: 100%
+		display: flex 
+		justify-content: center
+		align-items: center
+		.slick-arrow
+			 position: static !important
+		.control__slider-link
+			color: #000000
+
+.control
+	&__slider
+		.slick-arrow
+			cursor: pointer
+		.slick-prev.slick-arrow
+			width: 109px
+			height: 35px
+			transform: none
+			background: url('../images/main/arr-left.png') no-repeat
+		.slick-next.slick-arrow
+			width: 109px
+			height: 35px
+			transform: rotate(180deg)
+			background: url('../images/main/arr-left.png') no-repeat
+	&__slider-link
+		width: 100px
+		height: 100px
+		margin: 0 40px
+		border-radius: 50%
+		position: relative
+		border: 2px solid #8c632d
+		display: flex
+		justify-content: center
+		align-items: center
+		text-transform: uppercase
+		font-size: 21px
+		&:before 
+			content: ''
+			position: absolute
+			top: 50%
+			left: -36px
+			width: 11px
+			height: 11px
+			border-radius: 50%
+			border: 1px solid #8c632d 
+			transform: translate(0, -50%)
+		&:after 
+			content: ''
+			position: absolute
+			top: 50%
+			right: -36px
+			width: 11px
+			height: 11px
+			border-radius: 50%
+			border: 1px solid #8c632d 
+			transform: translate(0, -50%)
+
+.item
+	&__lots-link
+		outline: none
+		img
+			border: 3px solid #bb9c66
+	&__lots-title
+		margin-bottom: 30px
+		font-size: 21px
+		color: #1c242a
+		text-transform: uppercase
+		flex: 1 1 auto
+		z-index: 10
+	&__lots-timer
+		font-size: 18px
+		color: #000000
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			top: -40px
+			left: calc(50% - 32px)
+			width: 70px
+			height: 70px
+			background-color: #ffffff 
+			transform: rotate(45deg)
+		&:before 
+			content: ''
+			position: absolute
+			background: url('../images/icons/sands-watch.png') top no-repeat
+			top: -42px
+			left: calc(50% - 6px)
+			width: 12px
+			height: 15px
+			z-index: 10
+		span 
+			position: relative
+			z-index: 10
+			top: -24px
+.title
+	width: 100%
+	text-align: center
+	&__title
+		margin-bottom: 25px
+		font-family: 'Ceremonious One'
+		font-size: 40px
+		color: #bb9c66	
+	&__subtitle
+		margin-bottom: 20px
+		font-family: 'PF Din Text Cond Pro'
+		color: #1c242a
+		font-size: 35px
+		letter-spacing: 5px
+		text-transform: uppercase
+	&__decoration
+		display: flex 
+		justify-content: space-between
+		align-items: center
+	&__decoration-item
+		margin-bottom: 25px
+		margin-right: 100px
+		width: 100%
+		height: 1px
+		background-color: #bb9c66
+		position: relative
+		&:after 
+			position: absolute
+			content: ''
+			right: -17px
+			top: calc(50% - 5px)
+			width: 9px
+			height: 9px
+			border-radius: 50%
+			border: 1px solid #bb9c66
+		&:nth-child(3)
+			transform: rotate(180deg)
+			margin-right: 0
+			margin-left: 100px
+		span
+			display: block
+			&:before 
+				position: absolute
+				content: ''
+				top: calc(50% - 5px)
+				right: -38px
+				width: 10px
+				height: 10px
+				border: 1px solid #bb9c66
+				transform: rotate(45deg)
+			&:after 
+				position: absolute
+				content: ''
+				top: calc(50% - 8px)
+				right: -67px
+				width: 16px
+				height: 16px
+				border: 1px solid #bb9c66
+				transform: rotate(45deg)
+.item
+	&__lots-info
+		font-size: 14px	
+		margin-bottom: 24px
+	&__lots-btn
+		padding: 15px 30px
+		text-transform: uppercase
+		font-size: 21px
+		color: #000000
+		outline: none
+		background-color: transparent	
+
+
+.info
+	&__lots
+		display: flex
+		justify-content: space-between
+	&__lots-eye
+		position: relative
+		flex: 0 0 50px
+		padding-top: 35px
+		&:before 
+			content: ''
+			position: absolute
+			top: 0
+			left: calc(50% - 12px)
+			background: url('../images/icons/eye.png') no-repeat
+			width: 25px
+			height: 25px
+		&:after
+			content: ''
+			position: absolute
+			bottom: 33px
+			left: calc(50% - 25px)
+			width: 50px
+			height: 1px
+			background-color: #bb9c66
+	&__lots-price
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 13px
+			left: calc(50% - 35px)
+			width: 70px
+			height: 70px
+			border: 1px solid #bb9c66
+			transform: rotate(45deg)
+	&__lots-price-number
+		font-family: 'BravoRG'
+		font-size: 50px
+	&__lots-palm
+		position: relative
+		flex: 0 0 50px
+		padding-top: 35px
+		&:before 
+			content: ''
+			position: absolute
+			top: 0
+			left: calc(50% - 12px)
+			background: url('../images//icons/palm.png') no-repeat
+			width: 25px
+			height: 25px
+		&:after
+			content: ''
+			position: absolute
+			bottom: 33px
+			left: calc(50% - 25px)
+			width: 50px
+			height: 1px
+			background-color: #bb9c66
+
+.item__lots-info-btn
+	&.item-bt	
+		background-color: transparent
+		color: #000000
+		padding: 15px 30px
+		&:before 
+			width: 200px
+			left: calc(50% - 100px)
+		&:after
+			width: 200px
+			left: calc(50% - 100px)
+		span 
+			&:before 
+				left: 23px
+			&:after 
+				right: 23px
+
+//=Section Categories==========================
+.categories
+	&__container
+		overflow: hidden
+		position: relative
+		&:after 
+			content: ''
+			position: absolute
+			height: 45px
+			bottom: 0
+			background-color: #ffffff
+			width: 100%
+	&__row
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -50px
+		position: relative
+		padding: 37px 0 0 0
+		&:before,
+		&:after 
+			content: ''
+			position: absolute
+			top: 3px
+			width: calc(24px * 0.72)
+			flex: 0 0 calc(24px * 0.72)
+			height: calc(24px * 0.72)
+			transform: translate(-71%, 0) rotate(-45deg)
+			border: 1px solid #bb9c66
+		&:before 
+			left: 33.333%
+			@media (max-width: 975px)
+				left: 50%
+		&:after 
+			left: 66.667%
+			@media (max-width: 975px)
+				display: none
+	&__column
+		position: relative
+		padding: 0 50px 25px
+		flex: 0 1 33.333%
+		margin: 0 0 25px
+		display: flex 
+		justify-content: center
+		&:before 
+			content: ''
+			position: absolute
+			background-color: #bb9c66
+			width: 10px
+			height: 10px
+			left: 50%
+			bottom: -5px
+			flex: 0 0 10px
+			border-radius: 50%
+			transform: translate(-50%, 0)
+		@media (max-width: 975px)
+			flex: 0 1 50%
+		@media (max-width: 652px)	
+			flex: 1 1 100%		
+	&__item
+		width: 250px
+		height: 250px
+		padding: 24px 20px 39px
+		position: relative
+		display: flex 
+		justify-content: center
+		flex-direction: column
+		align-items: center
+		text-align: center
+	&__decor
+		position: absolute
+		right: 0
+		top: 0
+		width: 24px
+		transform: translate(34%, 0)
+		height: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+		z-index: 11
+		&:before 
+			content: ''
+			width: 1px
+			background-color: #bb9c66
+			flex: 1 1 auto
+
+		&:after 
+			content: ''
+			width: calc(24px * 0.72)
+			flex: 0 0 calc(24px * 0.72)
+			height: calc(24px * 0.72)
+			transform: rotate(-45deg)
+			border: 1px solid #bb9c66
+			margin: 15px 0 0 0
+
+		span 
+			display: flex 
+			flex: 1 1 auto 
+			flex-direction: column
+			align-items: center
+			&:before 
+				content: ''
+				background-color: #bb9c66
+				width: 10px
+				height: 10px
+				flex: 0 0 10px
+				border-radius: 50%
+				margin: 20px 0
+			&:after 
+				content: ''
+				background-color: #bb9c66
+				width: 1px
+				flex: 1 1 auto
+.item
+	position: relative
+	padding: 30px 30px 40px 30px
+	text-align: center
+	height: 250px
+	width: 250px
+	border-radius: 50%
+	overflow: hidden
+	display: flex 
+	flex-direction: column 
+	align-items: center
+	&:hover 
+		.item__bg
+			transform: scale(1.1)
+	&__link
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 11
+		border-radius: 50%
+		overflow: hidden
+	&__icon
+		position: relative
+		z-index: 10
+		margin: 0 0 25px 0
+	&__title
+		position: relative
+		z-index: 10
+		text-transform: uppercase
+		color: #ffffff
+		font-size: 21px
+		font-weight: 500
+		letter-spacing: 2.1px
+		line-height: 25px
+		flex: 1 1 auto
+	&__deco
+		text-align: center
+		position: relative
+		z-index: 10
+	&__bg
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		border-radius: 50%
+		transition: transform 0.8s ease 0s
+		&:after 
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			border-radius: 50%
+			background: rgba(0, 0, 0, 0.7)
+
+.categories
+	&__text
+		font-size: 15px
+		color: #333333
+		line-height: calc(25 / 15)
+		margin-bottom: 75px
+		p 
+			margin: 0 0 25px 0
+			&:last-child
+				margin: 0
+
+.text-categories
+	&__body
+		padding: 10px 0 25px 135px
+		background: url('../images/main/categories/bg.png') left top repeat-y
+		position: relative
+		&:before 
+			content: ''
+			background: url('../images/main/categories/bg-header.png') no-repeat
+			position: absolute
+			top: -4px
+			left: 0
+			width: 85px
+			height: 12px
+		@media (max-width: $md3)
+			padding: 10px 0 25px 95px
+
+.services
+	text-align: center 
+	display: flex 
+	flex-direction: column 
+	background-color: #1c242a
+	&__container
+		margin-bottom: 61px
+		overflow: hidden
+	&__header
+		margin-top: 60px
+	&__row
+		margin: 0 -50px
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+
+	&__column
+		flex: 0 1 33.333%	
+		padding: 0 50px
+		@media (max-width: 975px)
+			flex: 0 1 50%
+		@media (max-width: 648px)
+			flex: 1 1 100%
+	&__item
+		margin: 0 0 40px 0
+	&__img
+		display: flex 
+		height: 205px
+		justify-content: center
+		align-items: center
+		margin: 0 0 10px 0
+	&__title
+		font-family: 'PF Din Text Cond Pro'
+		font-size: 21px
+		font-weight: 500
+		line-height: calc(25 / 15)
+		text-transform: uppercase
+		color: #ffffff 
+		letter-spacing: 2.1px
+	&__text
+		color: #bb9c66
+		font-size: 15px
+		line-height: calc(25 / 15)
+		margin: 23px 0 0 0
+
+	&__btn
+		position: relative
+		font-size: 21px
+		font-weight: 500
+		font-family: 'PF Din Text Cond Pro'		
+		display: block
+		letter-spacing: 2.1px
+		text-align: center 
+		text-transform: uppercase
+		margin: 30px 0 0 0
+		text-transform: uppercase
+		font-weight: 500
+		&:before 
+			content: ''
+			position: absolute
+			background-color:  #bb9c66
+			height: 1px
+			width: 100%
+			top: 50%
+			left: 0
+		span 
+			position: relative
+			z-index: 10
+			font-size: 21px
+			padding: 0 9px
+			background-color: #1c242a
+
+.block
+	&__header-title
+		.title__subtitle
+			color: #ffff
+
+.quotes
+	padding: 50px 0 0 0
+	&__container
+		.title__subtitle
+			color: #1c242a
+
+.slider-quotes
+	margin-bottom: 75px	
+	&__slide
+		display: flex 
+		align-items: center
+		min-width: 0
+		@media (max-width: 570px)
+			display: block
+	&__img
+		display: flex 
+		justify-content: center
+		align-items: center
+		padding: 0 20px
+		flex: 0 0 33%
+		min-width: 0
+		img 
+			max-width: 100%
+
+	&__content
+		padding-right: 44px
+		margin-left: 44px
+		@media (max-width: 570px)
+				padding: 0	
+				margin: 0	
+	&__title
+		font-size: 25px
+		line-height: calc(30 / 25)
+		font-style: italic
+		margin: 0 0 30px/25px * 1em 0
+		max-width: 474px
+	&__info
+		color: #1c242a
+		font-size: 15px
+		p 
+			margin: 0 0 7px 0
+			&:last-child 
+				margin: 0 0 0 0 
+
+.control-slider-quotes
+	display: flex 
+	justify-content: space-between
+	align-items: center
+	max-width: 400px
+	margin: 0 auto
+	&__decor
+		flex: 0 1 33.333%
+		display: flex 
+		align-items: center
+		cursor: pointer
+		&:before 
+			content: ''
+			flex: 1 1 auto
+			height: 1px
+			background-color: #bb9c66
+		&:after 
+			content: ''
+			margin: 0 0 0 5px
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			border: 1px solid #bb9c66
+		&:last-child 
+			flex-direction: row-reverse
+			&:after 
+				margin: 0 5px 0 5px
+	&__circle
+		display: inline-flex
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		border: 1px solid #bb9c66
+		background: url('../images/main/quotes/load.png') center no-repeat
+		cursor: pointer
+	&__link
+		text-align: center 
+		flex: 0 1 33.333%
+
+
+.info
+	padding: 0 0 75px 0
+	&__container
+		overflow: hidden
+	&__row
+		display: flex 
+		justify-content: space-between
+		flex-wrap: wrap
+	&__column
+		flex: 0 1 50%
+		padding: 0 22px
+		margin: 0 -22px
+		&:last-child
+			flex: 1 1 100%
+		@media (max-width: 515px)
+			flex: 0 0 100%
+	&__item
+		margin: 0 0 30px 0
+	&__date
+		color: #bb9c66 
+		font-size: 12px
+		margin: 0 0 5px 0
+	&__lable
+		font-size: 15px
+		font-family: 'PF Din Text Cond Pro'
+		color: #333333
+		font-weight: 700
+		text-decoration: underline 
+		display: inline-block
+		margin: 0 0 5px 0
+	&__text
+		font-size: 15px
+		line-height: calc(21 / 15)
+
+.title-info
+	display: flex 
+	align-items: center
+	font-size: 35px
+	font-family: 'PF Din Text Cond Pro'
+	font-weight: 500
+	letter-spacing: 3.5px
+	text-transform: uppercase
+	margin-bottom: 30px
+	span 
+		&:first-child
+			margin: 0 22px 0 0
+			img 
+				display: flex 
+				justify-content: center
+				align-items: center 
+
+.subscribe
+	&__body
+		display: flex 
+		justify-content: space-between
+		@media (max-width: 570px)
+			display: block	
+			margin-bottom: 15px	
+	&__column
+		flex: 0 1 50%
+		padding: 0 22px
+		margin: 0 -22px
+		@media (max-width: 570px)
+			padding: 0 22px
+	&__text
+		font-size: 15px
+		line-height: calc(21 / 15)
+		@media (max-width: 570px)
+			margin-bottom: 15px	
+
+.form-subscribe
+	height: 50px
+	border: 3px solid #bb9c66
+	background-color: #ffffff
+	display: flex 
+	&__input
+		flex: 1 1 auto
+		input
+			border-radius: 0 !important
+			width: 100%
+			color: #4f4f4f
+			border: none
+			font-size: 15px
+			height: 100%
+			display: block 
+			padding: 0 25px
+			&:focus
+				color:#000000 
+	&__btn
+		position: relative
+		flex: 0 0 95px
+		background: #ffffff
+		cursor: pointer
+		&:before 
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translate(0, -50%)
+			width: 1px
+			height: 32px
+			background-color: #bb9c66
+		span 
+			background: url('../images/main/info/arr.png') right no-repeat
+			padding: 0 32px 0 0
+			color: #1c242a
+			font-size: 21px
+			font-family: 'PF Din Text Cond Pro'
+			font-weight: 500
+			text-transform: uppercase
+			letter-spacing: 2.12px
+	button
+		border: none 
+._active
+	display: block
+._active-n
+	top: 0
