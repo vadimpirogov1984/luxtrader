@@ -1,13 +1,13 @@
 @font-face {
   font-family: "PF Din Text Cond Pro";
-  src: url("fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.eot");
-  src: url("fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.eot?#iefix")
+  src: url("./fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.eot");
+  src: url("./fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.eot?#iefix")
     format("embedded-opentype");
-  src: url("fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.woff2")
+  src: url("./fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.woff2")
     format("woff2");
-  src: url("fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.woff")
+  src: url("./fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.woff")
     format("woff");
-  src: url("fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.ttf")
+  src: url("./fonts/PFDinTextCondPro-Regular/PFDinTextCondPro-Regular.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -16,14 +16,14 @@
 
 @font-face {
   font-family: "PF Din Text Cond Pro";
-  src: url("fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.eot");
-  src: url("fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.eot?#iefix")
+  src: url("./fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.eot");
+  src: url("./fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.eot?#iefix")
     format("embedded-opentype");
-  src: url("fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.woff2")
+  src: url("./fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.woff2")
     format("woff2");
-  src: url("fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.woff")
+  src: url("./fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.woff")
     format("woff");
-  src: url("fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.ttf")
+  src: url("./fonts/PFDinTextCondPro-Medium/PFDinTextCondPro-Medium.ttf")
     format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -32,12 +32,12 @@
 
 @font-face {
   font-family: "Ceremonious One";
-  src: url("fonts/CeremoniousOne/CeremoniousOne.eot");
-  src: url("fonts/CeremoniousOne/CeremoniousOne.eot?#iefix")
+  src: url("./fonts/CeremoniousOne/CeremoniousOne.eot");
+  src: url("./fonts/CeremoniousOne/CeremoniousOne.eot?#iefix")
     format("embedded-opentype");
-  src: url("fonts/CeremoniousOne/CeremoniousOne.woff2") format("woff2");
-  src: url("fonts/CeremoniousOne/CeremoniousOne.woff") format("woff");
-  src: url("fonts/CeremoniousOne/ceremonious_one.ttf") format("truetype");
+  src: url("./fonts/CeremoniousOne/CeremoniousOne.woff2") format("woff2");
+  src: url("./fonts/CeremoniousOne/CeremoniousOne.woff") format("woff");
+  src: url("./fonts/CeremoniousOne/ceremonious_one.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -45,11 +45,11 @@
 
 @font-face {
   font-family: "BravoRG";
-  src: url("fonts/BravoRG/BravoRG.eot");
-  src: url("fonts/BravoRG/BravoRG.eot?#iefix") format("embedded-opentype");
-  src: url("fonts/BravoRG/BravoRG.woff2") format("woff2");
-  src: url("fonts/BravoRG/BravoRG.woff") format("woff");
-  src: url("fonts/BravoRG/BravoRG.ttf") format("truetype");
+  src: url("./fonts/BravoRG/BravoRG.eot");
+  src: url("./fonts/BravoRG/BravoRG.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/BravoRG/BravoRG.woff2") format("woff2");
+  src: url("./fonts/BravoRG/BravoRG.woff") format("woff");
+  src: url("./fonts/BravoRG/BravoRG.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
