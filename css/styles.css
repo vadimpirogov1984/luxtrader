@@ -37,7 +37,7 @@
     format("embedded-opentype");
   src: url("fonts/CeremoniousOne/CeremoniousOne.woff2") format("woff2");
   src: url("fonts/CeremoniousOne/CeremoniousOne.woff") format("woff");
-  src: url("fonts/CeremoniousOne/ceremonious_one.ttf") format("truetype");
+  src: url("fonts/CeremoniousOne/CeremoniousOne.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
